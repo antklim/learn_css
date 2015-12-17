@@ -1,3 +1,10 @@
+/* General style settings
+   ========================================================================== */
+
+/**
+ * Boxes
+ */
+
 *,
 *:before,
 *:after {
@@ -6,19 +13,9 @@
           box-sizing: border-box;
 }
 
-body {
-  background: rgba(125, 125, 125, 0.2);
-}
-
-.layout {
-  margin: 0 auto;
-  max-width: 800px;
-}
-
-header {
-  margin-bottom: 1.5%;
-  margin-top: 0.5%;
-}
+/**
+ * Clearfix
+ */
 
 .container:before,
 .container:after {
@@ -35,17 +32,9 @@ header {
   *zoom: 1;
 }
 
-.site-nav {
-  float: left;
-  margin: 0 1.5%;
-  width: 10%;
-}
-
-main {
-  float: left;
-  margin: 0 1.5%;
-  width: 83%
-}
+/**
+ * Grid system
+ */
 
 .grid,
 .col-1-2 {
@@ -58,6 +47,34 @@ main {
   text-align: center;
   vertical-align: top;
   width: 49%;
+}
+
+/* Site's elements and classes
+   ========================================================================== */
+body {
+  background: rgba(125, 125, 125, 0.2);
+}
+
+.layout {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+header {
+  margin-bottom: 1.5%;
+  margin-top: 0.5%;
+}
+
+.site-nav-container {
+  float: left;
+  margin: 0 1.5%;
+  width: 10%;
+}
+
+main {
+  float: left;
+  margin: 0 1.5%;
+  width: 83%
 }
 
 footer {
