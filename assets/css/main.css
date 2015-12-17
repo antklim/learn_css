@@ -51,19 +51,32 @@
 
 /* Site's elements and classes
    ========================================================================== */
+
+/**
+ * Body and main layout
+ */
+
 body {
   background: rgba(125, 125, 125, 0.2);
 }
 
 .layout {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 900px;
 }
+
+/**
+ * Header section
+ */
 
 header {
   margin-bottom: 1.5%;
   margin-top: 0.5%;
 }
+
+/**
+ * Navigation section
+ */
 
 .site-nav-container {
   float: left;
@@ -71,11 +84,25 @@ header {
   width: 10%;
 }
 
+.site-nav-list,
+.site-nav-nested-list {
+  list-style-type: none;
+  padding-left: 0.5em;
+}
+
+/**
+ * Content section
+ */
+
 main {
   float: left;
   margin: 0 1.5%;
   width: 83%
 }
+
+/**
+ * Footer section
+ */
 
 footer {
   margin-bottom: 0.5%;
